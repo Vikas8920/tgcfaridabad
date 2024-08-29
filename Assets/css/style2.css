@@ -1,0 +1,135 @@
+/* SOCIAL ICONS FOR MOBILE */
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 300px;
+    right: 0;
+    display: none;
+    z-index: +999999!important;
+}
+.social .phone{
+    border-radius: 4px;
+}
+
+
+/* popup form */
+/* Popups */
+.popup{
+    display: none;
+    width: 400px;
+    /* height: 340px !important; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fcf5eb;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1000;
+}
+.pops{
+  height: 340px !important;
+}
+.popup form h2{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+.popup form .apply-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+    outline: none;
+}
+.popup form .apply-inputs input{
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid black;
+}
+.popup button{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #FF9B24;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+}
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+.error2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 993px){
+    /* Social Icons */
+  .social{
+    display: flex;
+  }
+  .social img{
+    width: 40px!important;
+  }
+}
+
+@media(max-width: 768px){
+   /* Social Icons */
+  .social{
+    display: flex;
+  }
+  .social img{
+    width: 40px !important;
+  }
+  .popup{
+    width: 300px;
+    /* height: 350px !important; */
+  }
+}
+
+@media(max-width: 576px){
+   /* Social Icons */
+  .social{
+    display: flex;
+  }
+  .social img{
+    width: 40px !important;
+  }
+  .popup{
+    width: 300px;
+    /* height: 350px !important; */
+  }
+}
